@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+.Image-section {
+  background-color: white;
+  width: 100%;
+  height: 308px;
+}
+.card_img {
+  width: 80%;
+  height: 80%;
+  margin: 11%;
+}
+.box-card {
+  margin: 4.2%;
+  width: 15.5rem;
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  cursor: pointer;
+}
+.item-info {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 4px 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.item-info .prize {
+  font-family: "Tilt Neon", cursive;
+}
+
+@media (max-width: 601px) {
+  .box-card {
+    display: block;
+    margin: auto;
+    margin-top: 8%;
+  }
+}
+
+/* ------------------------------------------------------------------------- */
+/* style for Mobiledetails */
+
+.m-cnt {
+  box-sizing: border-box;
+  width: 90%;
+  height: auto;
+  margin-top: 7%;
+}
+
+.mobile-detail-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.detail-img img {
+  background-color: #d2dbdd;
+  width: 25rem;
+}
+.mobile-discription {
+  margin-top: 2%;
+  margin-left: 10%;
+}
+.mobile-discription h2 {
+  font-size: xx-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.mobile-discription p {
+  margin-top: 3%;
+  font-size: large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+..mobile-discription h6 {
+  font-family: "Tilt Neon", cursive;
+}
+.btn {
+  margin-top: 10%;
+  /* padding: %; */
+  border-radius: 10px;
+  border: 1px solid blue;
+  background-color: rgb(248, 245, 245);
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: black;
+  color: yellow;
+}
+.btn2 {
+  margin-left: 5%;
+}
+
+/* ------------------------------------------------------------------------------ Css for modal*/
+.model-wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0px;
+  /* display: flex;
+  backface-visibility: visible; */
+  background-color: rgba(189, 189, 189, 0.9);
+}
+.btn-model-box {
+  display: flex;
+  justify-content: space-around;
+}
+.model-container .btn-box {
+  margin-bottom: 20%;
+  border-radius: 10px;
+  background-color: #d2dbdd;
+  border: 1px solid rgb(220, 192, 247);
+  padding: 3px;
+}
+.model-container .btn-box:hover {
+  background-color: black;
+  color: yellow;
+}
+.model-container h2 {
+  margin: 3%;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+.model-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 30rem;
+  background-color: #fff;
+  /* width: 30%;
+  height: 70%;
+  margin-left: 30%;
+  margin-top: 7%; */
+  /* border-radius: 12px; */
+  background-color: white;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.model-container img {
+  margin-left: 23.5%;
+  width: 52%;
+  height: 50%;
+}
+
+@media (max-width: 706px) {
+  .mobile-detail-container {
+    flex-direction: column;
+  }
+  .detail-img img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* ------------------------css for Nav */
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(77, 69, 225);
+  display: flex;
+  justify-content: flex;
+  align-items: center;
+}
+
+.nav-cart {
+  margin-right: 3.5rem;
+  background-color: rgb(77, 69, 225);
+  color: #fff;
+}
+.nav-heading {
+  margin-left: 2rem;
+  background-color: rgb(77, 69, 225);
+  color: #fff;
+  font-family: "Tilt Neon", cursive;
+  margin-bottom: 1rem;
+}
+.navbar p {
+  position: absolute;
+  left: 10%;
+  bottom: -15%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgb(77, 69, 225);
+  color: #fff;
+}
+.navbar a {
+  background-color: rgb(77, 69, 225);
+}
+
+/* css for cart */
+.remove {
+  cursor: pointer;
+}
+.cart-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Tilt Neon", cursive;
+}
+.cart-st-main-div {
+  display: flex;
+  justify-content: space-around;
+}
+.col img {
+  width: 12rem;
+  height: 12rem;
+}
+.row {
+  display: flex;
+  height: auto;
+  align-items: center;
+}
+.cart-main {
+  display: flex;
+  justify-content: space-around;
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 25rem;
+}
+.carousel-indicators {
+  opacity: 0;
+  margin-top: 20%;
+}
+.carousel-control-prev-icon {
+  opacity: 0;
+}
+.carousel-control-next {
+  opacity: 0;
+}
+.cart-btn {
+  font-size: large;
+  font-weight: bolder;
+  padding: 0.2rem;
+  border-radius: 60%;
+  border: 3px solid black;
+}
+.cart-btn:hover {
+  background-color: black;
+  color: yellow;
+}
+.cart-qnt {
+  font-size: large;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 0.5rem;
+}
+.cart-qnt {
+  width: 14%;
+  padding: 11%;
+  text-align: center;
+  height: 2rem;
+  border: none;
+}
+.grand-total {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 6.5%;
+}
+.btn3 {
+  margin-left: 83%;
+  margin-top: 1%;
+}
+
+@media (max-width: 775px) {
+  .price {
+    display: none;
+  }
+  .remove {
+    display: none;
+  }
+}
+@media (max-width: 738px) {
+  .grand-total h3 {
+    margin: auto;
+    color: green;
+  }
+  .btn3 {
+    margin-left: 40%;
+    margin-top: 3%;
+  }
+}
+
+/* media for cart  */
+@media (max-width: 778px) {
+  .button-wrap {
+    display: flex;
+    justify-content: center;
+  }
+  .cart-qnt {
+    margin-right: 10px;
+  }
+}
